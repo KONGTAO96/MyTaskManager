@@ -1,0 +1,20 @@
+# 路径示例：替换为你的实际路径
+cd /path/to/MyTaskManager
+
+# 初始化（如果尚未初始化）
+git init
+git add .
+git commit -m "Initial commit - MyTaskManager fullstack project"
+
+# 添加远程（HTTPS 或 SSH，任选其一）
+git remote add origin https://github.com/KONGTAO96/MyTaskManager.git
+# 或： git remote add origin git@github.com:KONGTAO96/MyTaskManager.git
+
+# 获取远程分支信息
+git fetch origin
+
+# 基于远程 main 创建并切换到本地 feature/fullstack
+git checkout -b feature/fullstack origin/main
+
+# 推送到远程 feature/fullstack（首次推送）
+git push -u origin feature/fullstack
